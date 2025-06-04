@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TEA1</string>
+    <string name="entrez_votre_pseudo">Entrez votre pseudo</string>
+    <string name="ok">OK</string>
+    <string name="bienvenue">Bienvenue !</string>
+    <string name="Bienvenue">Bienvenue !</string>
+    <string name="item">Item</string>
+    <string name="ajouter_une_liste">+ Ajouter une liste</string>
+    <string name="ajouter_une_nouvelle_liste_de_t_ches">Ajouter une nouvelle liste de tâches</string>
+    <string name="pseudo">Pseudo :</string>
+    <string name="nouvelle_liste">Nouvelle liste</string>
+    <string name="nouvel_item">Nouvel item</string>
+</resources>
