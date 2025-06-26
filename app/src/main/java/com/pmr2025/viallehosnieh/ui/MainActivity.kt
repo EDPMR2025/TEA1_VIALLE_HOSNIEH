@@ -38,8 +38,18 @@ class MainActivity : TemplateActivity() {
             if (canAccessInternet()) {
                 buttonNewAccount.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.new_account_background))
                 buttonOk.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.ok_background))
+                if (dataProvider.sync() > 0) {
+                    Toast.makeText(this@MainActivity, "Synchronisation réussie", Toast.LENGTH_SHORT).show()
+                }
             } else {
                 Toast.makeText(this@MainActivity, "Pas de connexion internet", Toast.LENGTH_SHORT).show()
+                // L'application utilise le dernier utilisateur connecté
+                val savedHash = prefs.getString("hash", null)
+                if (savedHash != null) {
+                    val intent = Intent(this@MainActivity, ChoixListActivity::class.java) // Lance l’activité suivante
+                    intent.putExtra("hash", savedHash) // Envoie le hash au nouvel écran
+                    startActivity(intent)
+                }
             }
         }
 
@@ -57,9 +67,10 @@ class MainActivity : TemplateActivity() {
                         Toast.makeText(this@MainActivity, "Erreur d'authentification", Toast.LENGTH_SHORT).show()
                     }
                     is DataProvider.ResultUser.Success -> {
-                        prefs.edit() { putString("pseudo", user) } // Sauvegarde le hash dans les SharedPreferences
+                        prefs.edit() { putString("pseudo", user) } // Sauvegarde le pseudo dans les SharedPreferences
+                        prefs.edit() { putString("hash", result.hash) } // Sauvegarde le hash dans les SharedPreferences
                         val intent = Intent(this@MainActivity, ChoixListActivity::class.java) // Lance l’activité suivante
-                        intent.putExtra("hash", result.hash)
+                        intent.putExtra("hash", result.hash) // Envoie le hash au nouvel écran
                         startActivity(intent)
                     }
                 }
