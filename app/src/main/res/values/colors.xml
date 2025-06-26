@@ -2,5 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="light_grey">#bdbdbd</color>
+    <color name="light_background">#bdbdbd</color>
+    <color name="new_account_background">#B39EF2</color>""
+    <color name="ok_background">#8464F4</color>
 </resources>

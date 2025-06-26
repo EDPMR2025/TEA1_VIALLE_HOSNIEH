@@ -7,4 +7,10 @@
         android:title="Pseudo"
         android:defaultValue="none" />
 
+    <EditTextPreference
+        android:key="api_url"
+        android:title="API"
+        android:defaultValue="http://tomnab.fr/todo-api/" />
+
+
 </PreferenceScreen>

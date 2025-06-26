@@ -10,4 +10,8 @@
     <string name="pseudo">Pseudo :</string>
     <string name="nouvelle_liste">Nouvelle liste</string>
     <string name="nouvel_item">Nouvel item</string>
+    <string name="mot_de_passe">Mot de passe :</string>
+    <string name="entrez_votre_mot_de_passe">Entrez votre mot de passe</string>
+    <string name="nouveau_compte">Créer un nouveau compte</string>
+    <string name="vos_listes">Vos listes</string>
 </resources>

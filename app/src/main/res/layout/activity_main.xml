@@ -22,8 +22,25 @@
             android:id="@+id/editTextPseudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/entrez_votre_pseudo"
-            android:inputType="textPersonName" />
+            android:hint="@string/entrez_votre_pseudo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mot_de_passe"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/entrez_votre_mot_de_passe"
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <Button
@@ -31,6 +48,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/ok" />
+        android:text="@string/ok"
+        android:backgroundTint="@color/light_background"/>
+
+    <Button
+        android:id="@+id/buttonNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/light_background"
+        android:text="@string/nouveau_compte"
+        android:visibility="gone"
+        />
 
 </LinearLayout>

@@ -10,7 +10,7 @@
       android:id="@+id/textViewBienvenue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      tools:text="Bienvenue !"
+      android:text="@string/vos_listes"
       android:textSize="20sp"
       android:paddingBottom="16dp"/>
 

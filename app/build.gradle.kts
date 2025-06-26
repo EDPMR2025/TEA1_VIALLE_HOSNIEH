@@ -48,4 +48,9 @@ dependencies {
     implementation(libs.androidx.preference.ktx)
     implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.moshi:moshi:1.15.2")
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+
 }

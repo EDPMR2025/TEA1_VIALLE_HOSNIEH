@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
-        android:background="@color/light_grey">
+        android:background="@color/light_background">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -40,8 +40,9 @@
     <LinearLayout
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:id="@+id/layout_content"
-        android:orientation="vertical"/>
+        android:orientation="vertical"
+        android:layout_weight="1"/>
 
 </LinearLayout>
